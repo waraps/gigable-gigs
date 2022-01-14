@@ -120,4 +120,6 @@ export interface IGig {
   applicationId?: object;
   applied: boolean;
   distance: number;
+  startingDate?: Date | null;
+  endingDate?: Date | null;
 }
