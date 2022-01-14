@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  StyleSheet,
-  SafeAreaView,
-  FlatList,
-  SectionList,
-  View,
-  StatusBar,
-  Text,
-} from "react-native";
+import { StyleSheet, SafeAreaView, SectionList } from "react-native";
 
 // Components
 import Card from "./Card";
