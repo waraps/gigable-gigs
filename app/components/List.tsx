@@ -32,6 +32,9 @@ const List = () => {
   }, []);
 
   const FormateArray = (data: IGig) => {
+    if (data === undefined) {
+      return [];
+    }
     const groups = data.reduce((groups: Array<IGig>, gig: IGig) => {
       const date = gig.startDate.date;
       if (!groups[date]) {
