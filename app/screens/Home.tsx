@@ -32,7 +32,7 @@ const Home = () => {
 
       const location = await Location.getCurrentPositionAsync({});
       const { latitude, longitude } = location.coords;
-      dispatch(set_location({ latitude: 53.33306, longitude: -6.24889 }));
+      dispatch(set_location({ latitude, longitude }));
     } catch (error) {
       console.log(error);
     }
