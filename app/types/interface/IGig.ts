@@ -53,7 +53,7 @@ export interface IGig {
   ];
   industry: object;
   status: string;
-  deliveryGig: {
+  deliveryGig?: {
     id: number;
     dropoffLat: number;
     dropoffLng: number;
@@ -62,7 +62,7 @@ export interface IGig {
     fullLicense: number;
     kms: number;
     addressId: number;
-    categories: [
+    categories?: [
       {
         id: number;
         name: string;
